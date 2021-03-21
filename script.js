@@ -112,7 +112,6 @@ function numberPress(num) {
 
 function doTheJob() {
     for (let i = 0; i < 1;) {
-        console.log(value[0]);
     
         if (value.length <= 2) {
             totResult = calc(Number.parseFloat(value[i]), Number.parseFloat(value[i + 1]), operation[i]);
@@ -145,7 +144,6 @@ function operators(op) {
         } else{
             value[0] = Number.parseFloat(display.value);
             operation.push(op);
-            console.log(value[0]);
 
         }
 
@@ -153,10 +151,7 @@ function operators(op) {
 
             value[0] = totResult;
             value[1] = Number.parseFloat(display.value);
-            console.log(value[0] + ' value: 0');
             doTheJob();
-            console.log(Number.parseFloat(totResult));
-            console.log(value, operation);
             value[1] = [];
             operation = [];
             operation.push(op);
@@ -165,7 +160,6 @@ function operators(op) {
         }
         
         printCalc = false;
-        console.log(operation);
 
     };
         
