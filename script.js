@@ -12,7 +12,6 @@ let clearBtn = document.getElementById("clear");
 // Clearing the display
 function clear() {
     reset();
-    console.log(value, operation, totResult);
     display.value = '0';
     display.style.fontSize = "28px";
     
