@@ -129,12 +129,18 @@ function operators(op) {
 
     if (op === '=') {
 
+        let val0 = value[0];
         checkEqual = true;
         value[1] = Number.parseFloat(display.value);
         doTheJob();
         value[1] = [];
         operation = [];
         printCalc = true;
+        if (isNaN(totResult)) {
+            alert("Invalid format used!");
+            totResult = val0;
+            value[0] = val0;
+        } 
     } else {
         
         if (checkEqual && totResult != 0) {
