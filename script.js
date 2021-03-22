@@ -102,7 +102,6 @@ function numberPress(num) {
             return
         } else{
             display.value += num;
-            currentValue = display.value;
         }      
     }
     fontSize();
